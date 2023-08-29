@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+.pomotask{
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* LOGO COMPONENT */
+.logo{
+    width: 15rem;
+    display: block;
+    padding: 1rem 0;
+    margin: 0rem auto;
+    margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* TIMER COMPONENT */
+
+.timer{
+    /* background-color: aquamarine; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* TO-DO-LIST COMPONENT */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.to-do-list{
+    /* background-color:aqua; */
 }
