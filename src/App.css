@@ -25,5 +25,93 @@
 /* TO-DO-LIST COMPONENT */
 
 .to-do-list{
-   
+
+}
+
+.task-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.task-input-fld{
+    height: 2rem;
+    width: 80%;
+    font-size: 1.2rem ;
+    background-color: #00000000;
+    border: none;
+    border-bottom: solid var(--primary-text) 1px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.task-input-fld:focus,
+.task-input-fld:active{
+    color: var(--primary-text);
+    width: 85%;
+    outline: none;
+    border: none;
+    border-bottom: solid var(--accent-text) 1px;
+}
+
+
+.add-task-btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-text);
+    background-color: var(--accent-text);
+    transition: all 0.2s ease-in-out;
+}
+
+.add-task-btn:hover{
+    color: var(--accent-text);
+    background-color: var(--primary-text);
+}
+
+/* Task */
+.task{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    align-items: center;
+}
+
+.task-checkbox{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid var(--primary-text);
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.task-checkbox:checked {
+    background-color: var(--accent-text);
+}
+
+
+/* Task Update Buttons */
+.task-update-btns{
+    grid-column: -2/-1;
+    margin: 0.5rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-task{
+    font-weight:600 ;
+    color: var(--primary-text);
+    border: none;
+    background-color: rgba(255, 228, 196, 0);
+}
+.btn-task:hover{
+    color: var(--accent-text);
+    text-decoration: underline;
 }
