@@ -1,3 +1,7 @@
+.container{
+    padding: 2rem 1rem;
+}
+
 .pomotask{
     display: grid;
     grid-template-columns: 7fr 5fr;
@@ -7,13 +11,15 @@
 }
 
 
+
+
 /* LOGO COMPONENT */
 .logo{
     width: 15rem;
     display: block;
     padding: 1rem 0;
     margin: 0rem auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 /* TIMER COMPONENT */
@@ -24,9 +30,6 @@
 
 /* TO-DO-LIST COMPONENT */
 
-.to-do-list{
-
-}
 
 .task-form{
     display: flex;
@@ -81,6 +84,10 @@
     height: 50vh;
     overflow-y: scroll;
 } */
+.task{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+}
 
 .task-checkbox{
     margin-top: 5px;
@@ -126,4 +133,11 @@
 
 .completed{
     text-decoration: line-through;
+}
+
+@media screen and (max-width:450px) {
+    .pomotask{
+        display: block;
+    }
+
 }

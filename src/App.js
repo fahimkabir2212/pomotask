@@ -6,8 +6,10 @@ import Pomotask from "./components/Pomotask";
 const App = () => {
   return (
     <>
-      <AppLogo />
-      <Pomotask />
+      <div className="container">
+        <AppLogo />
+        <Pomotask />
+      </div>
     </>
   );
 };
