@@ -1,9 +1,11 @@
 import React from 'react'
 
-const TaskButton = () => {
+const TaskButton = (props) => {
+    const buttonTask = props.buttonTaskName;
+
   return (
 
-        <button className='btn-task'>Edit Task</button>
+        <button onClick={props.btnOnClick} className='btn-task'>{buttonTask}</button>
 
   )
 }

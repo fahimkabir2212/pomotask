@@ -109,9 +109,14 @@
     font-weight:600 ;
     color: var(--primary-text);
     border: none;
+    cursor: pointer;
     background-color: rgba(255, 228, 196, 0);
 }
 .btn-task:hover{
     color: var(--accent-text);
     text-decoration: underline;
+}
+
+.completed{
+    text-decoration: line-through;
 }
