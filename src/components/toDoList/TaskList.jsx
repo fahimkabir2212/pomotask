@@ -5,7 +5,7 @@ const TaskList = ({task, toggleComplete, deleteTask, editTask}) => {
 
 
   return (
-    <div className='task-list'>
+
         <div className='task'>
             <input onChange={()=> toggleComplete(task.id)} className='task-checkbox' type="checkbox" />
             <p  className={`${task.completed ? 'completed': ""}`}>{task.task}</p>
@@ -14,8 +14,6 @@ const TaskList = ({task, toggleComplete, deleteTask, editTask}) => {
                 <TaskButton btnOnClick = {()=> deleteTask(task.id)} buttonTaskName="Delete"/>
             </div>
         </div>
-           
-    </div>
   )
 }
 

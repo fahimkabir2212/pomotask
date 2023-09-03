@@ -32,6 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -39,6 +40,7 @@
     height: 2rem;
     width: 80%;
     font-size: 1.2rem ;
+    color: var(--primary-text);
     background-color: #00000000;
     border: none;
     border-bottom: solid var(--primary-text) 1px;
@@ -49,7 +51,7 @@
 .task-input-fld:focus,
 .task-input-fld:active{
     color: var(--primary-text);
-    width: 85%;
+    width: 87%;
     outline: none;
     border: none;
     border-bottom: solid var(--accent-text) 1px;
@@ -74,18 +76,18 @@
 }
 
 /* Task */
-.task{
-    display: grid;
-    grid-template-columns: 1fr 11fr;
-    align-items: center;
-}
+
+/* .task-list{
+    height: 50vh;
+    overflow-y: scroll;
+} */
 
 .task-checkbox{
+    margin-top: 5px;
     width: 1.3em;
     height: 1.3em;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 50%;
-    vertical-align: middle;
     border: 1px solid var(--primary-text);
     appearance: none;
     outline: none;
@@ -94,6 +96,10 @@
 }
 .task-checkbox:checked {
     background-color: var(--accent-text);
+}
+
+.task p {
+    font-weight: 300;
 }
 
 
@@ -106,11 +112,12 @@
 }
 
 .btn-task{
-    font-weight:600 ;
+    font-weight:600 ;   
     color: var(--primary-text);
     border: none;
     cursor: pointer;
     background-color: rgba(255, 228, 196, 0);
+    text-decoration: underline;
 }
 .btn-task:hover{
     color: var(--accent-text);

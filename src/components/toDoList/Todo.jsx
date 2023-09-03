@@ -5,7 +5,30 @@ import TaskList from './TaskList';
 import EditTodoFrom from './EditTodoForm';
 
 const Todo = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([    {
+    "id":1,
+    "task": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, ratione!",
+    "completed": false,
+    "isEditing":false
+},
+{
+    "id":2,
+    "task": "Lorem ipsum dolor sit amet.",
+    "completed": false,
+    "isEditing":false
+},
+{
+    "id":3,
+    "task": "Lorem ipsum dolor sit amet.",
+    "completed": false,
+    "isEditing":false
+},
+{
+    "id":4,
+    "task": "Lorem ipsum dolor sit amet.",
+    "completed": false,
+    "isEditing":false
+}]);
 
   const addTodo = function(todo) {
     setTodos([...todos, {id:uuidv4(), task:todo, completed: false, isEditing: false}]);
@@ -32,14 +55,16 @@ const Todo = () => {
   return (
     <div className='todo'>
        <TaskInputForm addTodo = {addTodo}/>
-       {todos.map((todo, index) => (
-        todo.isEditing ? (
-          <EditTodoFrom editTask={editTodo} task={todo}/>
-        ) : (
-          <TaskList task = {todo} key={index} toggleComplete = {toggleComplete} deleteTask ={deleteTask} editTask = {editTask}/>
-        )
+    <div className='task-list'>
+        {todos.map((todo, index) => (
+            todo.isEditing ? (
+              <EditTodoFrom editTask={editTodo} task={todo}/>
+            ) : (
+              <TaskList task = {todo} key={index} toggleComplete = {toggleComplete} deleteTask ={deleteTask} editTask = {editTask}/>
+            )
 
-       ) )}
+          ) )}
+    </div>
        
     </div>
   )

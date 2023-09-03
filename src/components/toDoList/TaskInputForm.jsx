@@ -13,7 +13,7 @@ const TaskInputForm = ({addTodo}) => {
     }
   return (
         <form onSubmit={handleSubmit} className='task-form'>
-          <input type="text" placeholder='tasks' className='task-input-fld' value={value} onChange={handleChange}/>
+          <input type="text" placeholder='tasks' className='task-input-fld' value={value} onChange={handleChange} required/>
           <button type='submit' className='add-task-btn'>+</button>
        </form>
   )
