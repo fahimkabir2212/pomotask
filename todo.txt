@@ -1,3 +1,5 @@
+Initial Plan:
+
 1. Define Folder Structure
 2. Component Creation - 
     - To-do Component: Initially It will store in the local storage. 
@@ -5,5 +7,3 @@
 3. Database Configuration
 4. Authentication (Auth0/Firebase)
 5. PWA Configuration
-
-Another Check Test
