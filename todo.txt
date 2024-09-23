@@ -6,5 +6,3 @@
 4. Authentication (Auth0/Firebase)
 5. PWA Configuration
 
-TEST TEST TEST PUSH
-
